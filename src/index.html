@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started</title>
+    <script src="https://unpkg.com/lodash@4.17.20"></script>
+  </head>
+  <body>
+    <main>
+      <header class="head">
+        <h1>Today's To Do List</h1>
+      </header>
+      <form>
+        <label for="item"></label>
+        <input type="text" id="item" placeholder="Add to your list" required />
+        <div id="task-list" class="task"></div>
+        <button type="submit" id="submit">Clear all completed</button>
+      </form>
+    </main>
+    <script src="./src/index.js"></script>
+  </body>
+</html>

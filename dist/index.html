@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Getting Started</title>
+    <script src="https://unpkg.com/lodash@4.17.20"></script>
+  <script defer src="/dist/runtime.js"></script><script defer src="/dist/index.js"></script></head>
+  <body>
+    <main>
+      <header class="head">
+        <h1>Today's To Do List</h1>
+      </header>
+      <form>
+        <label for="item"></label>
+        <input type="text" id="item" placeholder="Add to your list" required />
+        <div id="task-list" class="task"></div>
+        <button type="submit" id="submit">Clear all completed</button>
+      </form>
+    </main>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
