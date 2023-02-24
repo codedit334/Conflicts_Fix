@@ -7,40 +7,42 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var lodash__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2);
+// eslint-disable-next-line no-unused-vars
+
 
 
 const tasks = [
-  { description: "Buy milk", completed: false, index: 0 },
-  { description: "Do laundry", completed: true, index: 1 },
-  { description: "Call mom", completed: false, index: 2 },
-  { description: "Take out the trash", completed: true, index: 3 },
+  { description: 'Buy milk', completed: false, index: 0 },
+  { description: 'Do laundry', completed: true, index: 1 },
+  { description: 'Call mom', completed: false, index: 2 },
+  { description: 'Take out the trash', completed: true, index: 3 },
 ];
 function renderTasks() {
-  const taskList = document.getElementById("task-list");
+  const taskList = document.getElementById('task-list');
 
   // Clear any existing items from the task list
-  taskList.innerHTML = "";
+  taskList.innerHTML = '';
 
   // Sort the tasks array by index
   const sortedTasks = tasks.sort((a, b) => a.index - b.index);
 
   // Loop through the sorted tasks array and create an HTML list item element for each task
   sortedTasks.forEach((task) => {
-    const listItem = document.createElement("li");
+    const listItem = document.createElement('li');
 
     // Create a checkbox input element
-    const checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
     checkbox.checked = task.completed;
-    checkbox.addEventListener("click", () => {
+    checkbox.addEventListener('click', () => {
       task.completed = !task.completed;
       renderTasks();
     });
 
     // Create a label element for the task description
-    const label = document.createElement("label");
+    const label = document.createElement('label');
     label.innerText = task.description;
-    label.style.textDecoration = task.completed ? "line-through" : "none";
+    label.style.textDecoration = task.completed ? 'line-through' : 'none';
 
     // Add the checkbox and label elements to the list item element
     listItem.appendChild(checkbox);
@@ -17620,7 +17622,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\r\n    background-color: white;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    padding-top: 50px;\r\n}\r\n\r\nmain {\r\n    display: flex;\r\n    justify-content: center;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    flex-direction: column;\r\n    width: 600px;\r\n    border-bottom: #e5e5e5;\r\n    box-shadow: 0 8px 16px rgb(64 83 252 / 24%);\r\n    color: black;\r\n    padding-bottom: px;\r\n}\r\n\r\n.head {\r\n    width: 100%;\r\n    height: auto;\r\n    /* padding: 5px; */\r\n    background-color: rgb(6, 212, 6);\r\n}\r\n\r\nform {\r\n    width: 100%;\r\n    font-style: italic;\r\n}\r\n\r\nh1 {\r\n    margin-left: 1px;\r\n    font-weight: 800;\r\n    font-size: 26px;\r\n}\r\n\r\ninput {\r\n    padding-left: 1px;\r\n}\r\n\r\n#item {\r\n    width: 99%;\r\n    height: 60px;\r\n}\r\n\r\n::placeholder {\r\n    font-style: italic;\r\n}\r\n\r\nbutton {\r\n    width: 100%;\r\n    height: 60px;\r\n    font-style: italic;\r\n}\r\n\r\n.task {\r\n    width: 100%;\r\n    border: 1px solid grey;\r\n}\r\n\r\nli {\r\n    list-style: none;\r\n    border-bottom: 1px solid grey;\r\n    height: 60px;\r\n}", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "body {\r\n  background-color: white;\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  padding-top: 50px;\r\n}\r\n\r\nmain {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  flex-direction: column;\r\n  width: 600px;\r\n  border-bottom: #e5e5e5;\r\n  box-shadow: 0 8px 16px rgb(64 83 252 / 24%);\r\n  color: black;\r\n}\r\n\r\n.head {\r\n  width: 100%;\r\n  height: auto;\r\n\r\n  /* padding: 5px; */\r\n  background-color: rgb(6, 212, 6);\r\n}\r\n\r\nform {\r\n  width: 100%;\r\n  font-style: italic;\r\n}\r\n\r\nh1 {\r\n  margin-left: 1px;\r\n  font-weight: 800;\r\n  font-size: 26px;\r\n}\r\n\r\ninput {\r\n  padding-left: 1px;\r\n}\r\n\r\n#item {\r\n  width: 99%;\r\n  height: 60px;\r\n}\r\n\r\n::placeholder {\r\n  font-style: italic;\r\n}\r\n\r\nbutton {\r\n  width: 100%;\r\n  height: 60px;\r\n  font-style: italic;\r\n}\r\n\r\n.task {\r\n  width: 100%;\r\n  border: 1px solid grey;\r\n}\r\n\r\nli {\r\n  list-style: none;\r\n  border-bottom: 1px solid grey;\r\n  height: 60px;\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
