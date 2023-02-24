@@ -47,7 +47,7 @@ One attachment
  
 ## 🚀 Live Demo <a name="live-demo"></a>
  
-- [<a href="https://tracy-miranja.github.io/AWESOMEBOOK/">LIVE DEMO]
+- [<a href="https://tracy-miranja.github.io/TO-DO-LIST/">LIVE DEMO]
  
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
  
